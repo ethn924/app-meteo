@@ -16,9 +16,6 @@ Windows :
 Télécharge Git depuis le site officiel de Git: https://git-scm.com/downloads/win (prendre la version 64 bits)
 L'installateur va se télécharger automatiquement. Une fois téléchargé, lance-le et suis les instructions de l'assistant d'installation.
 Pour vérifier si l'installation est correcte, ouvre l'invite de commande (cmd) et tape git --version.
-macOS :
-
-Ouvre le terminal et tape git --version. Si Git n'est pas installé, il te proposera de l'installer via Xcode Command Line Tools. Suis les instructions à l'écran.
 
 2. Installer Visual Studio Code (VS Code)
 Si tu n'as pas encore installé VS Code, télécharge-le depuis le site officiel de VS Code et suis les instructions d'installation.
