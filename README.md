@@ -61,3 +61,5 @@ IMPORTANT !!!
 
 Pour que les modifications se réalisent, il faut obligatoirement faire ctrl+shift+g pour ouvrir le source control, et bien écrire un message avant d'appuyer sur commit.
 Ensuite pour mettre à jour, ouvrir le terminal et taper git pull.
+
+https://www.youtube.com/watch?v=mYGwt0Vyovw
