@@ -7,11 +7,12 @@ let url = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&a
 fetch(url).then( response => response.json().then((data) => {
     console.log(data);
     document.querySelector('#city').innerHTML = data.name;
-    document.querySelector('#temp').innerHTML = data.main.temp;
-    document.querySelector('#humidity').innerHTML = data.main.humidity + '°';
+    document.querySelector('#temp').innerHTML = data.main.temp + '°';
+    document.querySelector('#humidity').innerHTML = data.main.humidity + '%';
     document.querySelector('#wind').innerHTML = data.wind.speed + 'km/h';
 
-}))
+})
+).catch(err => console.log('Erreur ' + err));
 
 //boutton du bloc
 
