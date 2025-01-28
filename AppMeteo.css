@@ -7,7 +7,9 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    background-image: url(../../../Pictures/NuageWallpaperHD.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
