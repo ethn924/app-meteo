@@ -13,7 +13,7 @@ Git est l'outil nécessaire pour interagir avec GitHub depuis ta machine locale.
 
 Windows :
 
-Télécharge Git depuis le site officiel de Git.
+Télécharge Git depuis le site officiel de Git: https://git-scm.com/downloads/win (prendre la version 64 bits)
 L'installateur va se télécharger automatiquement. Une fois téléchargé, lance-le et suis les instructions de l'assistant d'installation.
 Pour vérifier si l'installation est correcte, ouvre l'invite de commande (cmd) et tape git --version.
 macOS :
