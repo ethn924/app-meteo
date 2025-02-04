@@ -37,13 +37,13 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('time').innerHTML = "Il est actuellement : " + h + ":" + m + ":" + s;
+    document.getElementById('time').innerHTML = "Local Time : " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 1000);
 }
 
 // Fonction pour ajouter un zéro devant les nombres inférieurs à 10
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // ajoute 0 devant les nombres < 10
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
 
