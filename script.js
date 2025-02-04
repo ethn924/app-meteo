@@ -37,7 +37,7 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     s = checkTime(s);
-    document.getElementById('time').innerHTML = "Local Time : " + h + ":" + m + ":" + s;
+    document.getElementById('time').innerHTML = "Il est actuellement : " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 1000);
 }
 
