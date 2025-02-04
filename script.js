@@ -43,7 +43,7 @@ function startTime() {
 
 // Fonction pour ajouter un zéro devant les nombres inférieurs à 10
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i};  // Ajoute un 0 devant les nombres < 10
     return i;
 }
 
