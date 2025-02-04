@@ -49,3 +49,4 @@ function checkTime(i) {
 
 // Appel initial de la fonction startTime pour démarrer la mise à jour de l'heure
 startTime();
+
