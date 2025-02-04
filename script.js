@@ -8,18 +8,18 @@ let apiCall = function(city) {
         .then(data => {
             console.log(data);
 
-            document.querySelector('#city').innerHTML = data.name;
-            document.querySelector('#temperature').innerHTML = `Température : ${data.main.temp}°C`;
-            document.querySelector('#humidity').innerHTML = `Humidité ${data.main.humidity}%`;
-            document.querySelector('#wind').innerHTML = `Vent ${data.wind.speed}km/h`;
-            document.querySelector('#description').innerHTML = `Conditions : ${data.weather[0].description}`;
+            document.querySelector('#cityName').innerHTML = data.name;
+            document.querySelector('#temp').innerHTML = `Température : ${data.main.temp}°C`;
+            document.querySelector('#humidity').innerHTML = `Humidité : ${data.main.humidity}%`;
+            document.querySelector('#wind').innerHTML = `Vent : ${data.wind.speed} km/h`;
+            document.querySelector('#conditions').innerHTML = `Conditions : ${data.weather[0].description}`;
         })
         .catch(error => console.log('Erreur lors de la récupération des données : ' + error.message));
 };
 
 // Ajout d'un écouteur d'événement sur le bouton de recherche
 document.querySelector("#searchButton").addEventListener("click", function() {
-    let ville = document.querySelector("#city").value;
+    let ville = document.querySelector("#cityInput").value;
     if (ville) {
         apiCall(ville);
     } else {

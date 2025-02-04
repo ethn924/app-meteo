@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Application Météo</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="weather-app">
-      <h1>Application Météo</h1>
-      <p>Entrez une ville pour obtenir les informations météo :</p>
-      <div class="search-container">
-        <input type="text" id="city" placeholder="Nom de la ville" />
-        <button id="searchButton">Rechercher</button>
-      </div>
-      <div id="weather-result">
-        <div id="temperature"></div>
-        <div id="description"></div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Météo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="weather-app">
+    <h1>Application Météo</h1>
+    <p>Entrez une ville pour obtenir les informations météo :</p>
+    <div class="search-container">
+      <input type="text" id="cityInput" placeholder="Nom de la ville">
+      <button id="searchButton">Rechercher</button>
     </div>
-
-    <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
-      <div class="box-container">
-        <div id="city" class="box"></div>
-        <div id="temp" class="box"></div>
-        <div id="humidity" class="box"></div>
-        <div id="wind" class="box"></div>
-      </div>
+    <div id="weather-result">
+      <div id="cityName" class="box"></div>
+      <div id="temp" class="box"></div>
+      <div id="humidity" class="box"></div>
+      <div id="wind" class="box"></div>
+      <div id="conditions" class="box"></div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
