@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WeatherScope</title>
+  <title>Bienvenue sur WeatherScope</title>
   <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Lien vers le fichier CSS pour les styles -->
@@ -12,10 +12,10 @@
 </head>
 
 <body>
+  <!-- Titre principal -->
+  <h1>Bienvenue sur WeatherScope</h1>
   <!-- Conteneur principal de l'application météo -->
   <div class="weather-app">
-    <h1>Bienvenue sur WeatherScope</h1>
-    <h2>Quel temps fait-il aujourd'hui ?</h2>
     <p>Entrez une ville ou un pays pour obtenir des informations sur la météo :</p>
     <!-- Conteneur pour la barre de recherche -->
     <div class="search-container">
@@ -24,17 +24,17 @@
     </div>
     <!-- Conteneur pour afficher les résultats de la météo -->
     <div id="weather-result">
-  <div id="cityName" class="box"><i class="fas fa-city"></i></div>
+      <div id="cityName" class="box"><i class="fas fa-city"></i></div>
       <div id="temp" class="box"><i class="fas fa-thermometer-half"></i></div>
       <div id="humidity" class="box"><i class="fas fa-tint"></i></div>
       <div id="wind" class="box"><i class="fas fa-wind"></i></div>
       <div id="conditions" class="box"></div>
     </div>
-
-  <!-- Conteneur pour afficher l'heure locale -->
   </div>
+  <!-- Conteneur pour afficher l'heure locale -->
   <div id="time-container">
     <div id="time"></div>
+  </div>
   <!-- Lien vers le fichier JavaScript pour la logique de l'application -->
   <script src="script.js"></script>
 </body>

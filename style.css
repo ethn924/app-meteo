@@ -18,6 +18,18 @@ body {
   color: #333;
 }
 
+/* Styles pour le titre principal */
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Styles pour le conteneur principal de l'application météo */
 .weather-app {
   text-align: center;
@@ -33,13 +45,6 @@ body {
 /* Effet de zoom au survol du conteneur principal */
 .weather-app:hover {
   transform: scale(1.02);
-}
-
-/* Styles pour le titre principal */
-h1 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 20px;
 }
 
 /* Styles pour le paragraphe d'instructions */
@@ -90,18 +95,6 @@ button:hover {
   color: #333;
 }
 
-/* Styles pour le conteneur des boîtes de résultats */
-.box-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-  gap: 15px; /* Espacement entre les cadres */
-  width: 100%;
-  max-width: 500px; /* Ajuste la largeur selon ton besoin */
-  margin-top: 20px; /* Pour pousser le conteneur vers le bas */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement */
-}
-
 /* Styles pour les boîtes de résultats */
 .box {
   border: 2px solid rgba(51, 51, 51, 0.5); /* Bordure semi-transparente */
@@ -122,6 +115,7 @@ button:hover {
   justify-content: center;
   flex-direction: column;
   transition: transform 0.3s ease;
+  margin-bottom: 15px; /* Espacement entre les boîtes */
 }
 
 /* Effet de zoom au survol des boîtes */
