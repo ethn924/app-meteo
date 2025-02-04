@@ -8,11 +8,11 @@ let apiCall = function(city) {
         .then(data => {
             console.log(data);
 
-            document.querySelector('#cityName').innerHTML = data.name;
-            document.querySelector('#temp').innerHTML = `Température : ${data.main.temp}°C`;
-            document.querySelector('#humidity').innerHTML = `Humidité : ${data.main.humidity}%`;
-            document.querySelector('#wind').innerHTML = `Vent : ${data.wind.speed} km/h`;
-            document.querySelector('#conditions').innerHTML = `Conditions : ${data.weather[0].description}`;
+            document.querySelector('#cityName').innerHTML = `<i class="fas fa-city"></i> ${data.name}`;
+            document.querySelector('#temp').innerHTML = `<i class="fas fa-thermometer-half"></i> ${data.main.temp}°C`;
+            document.querySelector('#humidity').innerHTML = `<i class="fas fa-tint"></i> ${data.main.humidity}%`;
+            document.querySelector('#wind').innerHTML = `<i class="fas fa-wind"></i> ${data.wind.speed} km/h`;
+            document.querySelector('#conditions').innerHTML = `<i class="fas fa-cloud"></i> ${data.weather[0].description}`;
         })
         .catch(error => console.log('Erreur lors de la récupération des données : ' + error.message));
 };
@@ -26,3 +26,21 @@ document.querySelector("#searchButton").addEventListener("click", function() {
         alert("Veuillez entrer un nom de ville !");
     }
 });
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML = "Local Time : " + h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+startTime();

@@ -11,9 +11,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #333;
 }
 
 .weather-app {
@@ -23,11 +25,18 @@ body {
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 500px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.weather-app:hover {
+  transform: scale(1.02);
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
+  margin-bottom: 20px;
 }
 
 p {
@@ -59,6 +68,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -97,11 +107,35 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  transition: transform 0.3s ease;
 }
 
-.d-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Aligner les cadres en bas */
-  height: 100vh; /* Prendre toute la hauteur de l'écran */
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#time-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#time {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
 }

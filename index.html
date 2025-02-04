@@ -5,24 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Application Météo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="weather-app">
-    <h1> Quel temps fait-il aujourd'hui ?</h1>
-    <p>Entrez une ville pour obtenir les informations météo :</p>
+    <h1>Quel temps fait-il aujourd'hui ?</h1>
+    <p>Entrez une ville ou un pays pour obtenir des informations sur la météo :</p>
     <div class="search-container">
       <input type="text" id="cityInput" placeholder="Nom de la ville">
-      <button id="searchButton">Rechercher</button>
+      <button id="searchButton"><i class="fas fa-search"></i></button>
     </div>
     <div id="weather-result">
-      <div id="cityName" class="box"></div>
-      <div id="temp" class="box"></div>
-      <div id="humidity" class="box"></div>
-      <div id="wind" class="box"></div>
-      <div id="conditions" class="box"></div>
+      <div id="cityName" class="box"><i class="fas fa-city"></i></div>
+      <div id="temp" class="box"><i class="fas fa-thermometer-half"></i></div>
+      <div id="humidity" class="box"><i class="fas fa-tint"></i></div>
+      <div id="wind" class="box"><i class="fas fa-wind"></i></div>
+      <div id="conditions" class="box"><i class="fas fa-cloud"></i></div>
     </div>
+  </div>
+
+  <div id="time-container">
+    <div id="time"></div>
   </div>
 
   <script src="script.js"></script>
