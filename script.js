@@ -1,5 +1,4 @@
-const APIKEY = "9c8778b9a7b9f840a2eb89aaf2bab6a5";
-const TIMEZONE_APIKEY = "6N67GZOS8ZNQ"; // Remplacez par votre clé API TimezoneDB
+// Les cles API sont dans config.js (voir config.example.js)
 
 let localTimeInterval;
 
